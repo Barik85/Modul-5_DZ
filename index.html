@@ -1,31 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Modul-5_DZ</title>
 </head>
+
 <body>
-    <header>
+    <header id="top">
         <nav>
-            <a href="#">home</a>
-            <a href="#">about</a>
-            <a href="#">gallery</a>
-            <a href="#"><img src="img/logo_journey.png" alt="logo"></a>
-            <a href="#">tours</a>
-            <a href="#">blog</a>
-            <a href="#">contacts</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li class="about"><a href="#">about</a>
+                    <ul class="drop-about">
+                        <li><a href="#">agency</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">team</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#"><img src="img/logo_journey.png" alt="logo"></a></li>
+                <li><a href="#">tours</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
         </nav>
 
     </header>
     <main>
-
+        <div class="slider">
+            <img src="img/Slide1-boat.jpg" alt="boat">
+            <p class="white-heading">THERE ARE PLENTY OF PLACES</p>
+            <p class="blue-heading"> that are worth seeing</p>
+            <figure class="navigation">
+                <img src="img/left-arrow.svg" alt="" class="left-arrow">
+                <img class="right-arrow" src="img/right-arrow.svg" alt="">
+            </figure>
+        </div>
+        <h2>Top destinations</h2>
+        <section class="top-destinations">
+            <div class="destination-1">
+                <img src="img/Venice.jpg" alt="">
+                <div class="description first">
+                    <h5>Venice</h5>
+                    <p>
+                        Lorem ipsum dolor site geril amet, consectetur cing eliti. Suspendisse nulla leo mew dignissim eu velite a rew qw vehicula
+                        lacinia arcufasecro. Aenean lacinia ucibusy fase tortor ut feugiat. Rabitur oliti aliquam bibendum
+                        olor quis malesuadivamu.
+                    </p>
+                    <a href="#">
+                        <input type="button" value="Details" class="btn">
+                    </a>
+                </div>
+            </div>
+            <div class="destination-2">
+                <img src="img/independence.jpg" alt="">
+                <div class="description second">
+                    <h5>New York</h5>
+                    <p>
+                        Lorem ipsum dolor site geril amet, consectetur cing eliti. Suspendisse nulla leo mew dignissim eu velite a rew qw vehicula
+                        lacinia arcufasecro. Aenean lacinia ucibusy fase tortor ut feugiat. Rabitur oliti aliquam bibendum
+                        olor quis malesuadivamu.
+                    </p>
+                    <a href="#">
+                        <input type="button" value="Details" class="btn">
+                    </a>
+                </div>
+            </div>
+            <div class="destination-3">
+                <img src="img/Paris.jpg" alt="">
+                <div class="description third">
+                        <h5>Paris</h5>
+                        <p>
+                            Lorem ipsum dolor site geril amet, consectetur cing eliti. Suspendisse nulla leo mew dignissim eu velite a rew qw vehicula
+                            lacinia arcufasecro. Aenean lacinia ucibusy fase tortor ut feugiat. Rabitur oliti aliquam bibendum
+                            olor quis malesuadivamu.
+                        </p>
+                        <a href="#">
+                            <input type="button" value="Details" class="btn">
+                        </a>
+                </div>
+            </div>
+        </section>
+        <a class="to-top" href="#top"><img src="img/arrow-up.png" alt=""></a>
     </main>
     <footer>
         <nav class="f-column1">
@@ -46,5 +110,10 @@
             <p>info@demolink.org</p>
         </div>
     </footer>
+    <div class="under-footer">
+
+    </div>
+
 </body>
+
 </html>
