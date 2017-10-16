@@ -11,6 +11,7 @@ nav {
 }
 nav>ul>li {
     display: inline-block;
+    position: relative;
 }
 nav>ul>li>a {
     text-decoration: none;
@@ -26,11 +27,11 @@ nav>ul>li>a {
     position: absolute;
     background-color: #ffffff;
     padding: 6px 10px 6px 10px;
-    left: 331px;
-    top: 90px;
+    left: 19px;
+    top: 42px;
     border-radius: 2px;
     list-style-type: none;
-    opacity: 0;
+    display: none;
 }
 .drop-about::before {
     content: " ";
@@ -52,7 +53,7 @@ nav>ul>li>a {
     text-transform: uppercase;
 }
 .about:hover .drop-about {
-    opacity: 1;
+    display: block;
 }
 nav img {
     vertical-align: middle;
@@ -162,11 +163,29 @@ footer p, .phone{
     line-height: 23px;
 }
 .to-top {
-    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #38afe5;
     position: fixed;
-    right: 166px;
+    right: 110px;
     bottom: 26px;
+    text-align: center; 
 }  
+.to-top:hover {
+    background-color: #263555;
+}
+.top-arrow {
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(135deg);
+    border-radius: 2px;
+    margin: auto;
+    position: relative;
+    top: 12px;
+}
 .clearfix:after {
     visibility: hidden;
     display: block;
